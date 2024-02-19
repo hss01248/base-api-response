@@ -11,7 +11,10 @@ public class BaseApiResponse2<T>  {
     public String code;
     public String msg;
     public int sysTime = (int) System.currentTimeMillis();
-
+    public BaseApiResponse2<T> setMsg(String msg) {
+        this.msg = msg;
+        return this;
+    }
 
     public final static String CODE_CANCEL = "cancel";
     public final static String CODE_TIMEOUT = "time out";

@@ -10,6 +10,12 @@ public class BaseApiResponse<T>  {
     public boolean success;
     public String errCode;
     public String errMsg;
+
+    public BaseApiResponse<T> setMsg(String msg) {
+        this.errMsg = msg;
+        return this;
+    }
+
     public int sysTime = (int) System.currentTimeMillis();
 
 

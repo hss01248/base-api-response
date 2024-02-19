@@ -6,7 +6,7 @@ plugins {
 }
 
 group = 'com.hss01248.api'
-version = '0.0.1-SNAPSHOT'
+version = '1.0.1'
 
 java {
     sourceCompatibility = '1.8'
@@ -20,13 +20,13 @@ dependencies {
    // testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 
-/*publishing {
+publishing {
     publications {
         myLib(MavenPublication) {
             from components.java
         }
     }
-    repositories {
+    /*repositories {
         maven {
             name = "MyRepo" //  optional target repository name
             url = "https://my.org.server/repo/url"
@@ -35,7 +35,7 @@ dependencies {
                 password = 'my-password'
             }
         }
-    }
-}*/
+    }*/
+}
 
 
